@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы - надписи и валидация</title>
+</head>
+<body>
+    <h1>Авторизация</h1>
+    <h2>Введите ваш пароль и емэйл</h2>
+    <!-- Есть два способа использования подписей -->
+    <!-- Вложенные -->
+    <!-- для идентификатора соединения -->
+    <!-- Подтверждение формы вызывает выполнение некоторого действия (редирект) -->
+    <form action="https://www.google.com/" method="get">
+        <label for="email">Адрес почты:</label>
+        <input type="email" id="email" name="useremail" value="Введите адрес почты">
+        <label for="pass">Пароль:</label>
+        <input type="password" id="pass" name="password" placeholder="Password">
+        <!-- Валидация -->
+        <!-- Обычно основная часть валидации проводится на бэкенде -->
+        <!-- Используйте атрибуты: required для обязательных полей -->
+        <label for="userinput">Текст:</label>
+        <input type="text" id="userinput" name="input" placeholder="Введите текст..." required>
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Форма для получения щенка!</h1>
+    <!-- Что мы изучим:
+            1. Радио-баттоны
+            2. Выпадающие меню
+            3. Большие тестовые поля для ввода
+    -->
+    <form method="get">
+        <h3>У вас уже есть собака?</h3>
+        <label for="yes">Да</label>
+        <input type="radio" id="yes" name="dog_choice" value="yes">
+        <label for="no">Нет</label>
+        <input type="radio" id="no" name="dog_choice" value="no">
+        <p>На сколько чисто у вас дома? (От 1 до 3, где 3 - максимально чисто)</p>
+        <select name="stars">
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+        </select>
+        <p>Дополнительный комментарий:</p>
+        <textarea name="name" rows="8" cols="80"></textarea>
+        <input type="submit" name value="Отправить">
+    </form>
+</body>
+</html>
