@@ -1,0 +1,19 @@
+/* Разные типы селекторов можно посмотреть здесь */
+/*  http://www.w3schools.com/cssref/css_selectors.asp */
+/*  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors  */
+/*  https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/Selectors */
+
+/* Селекторы классов начинаются с точки */
+.firstDiv {
+    color: blue;
+}
+
+.secondDiv {
+    background-color: gray;
+}
+
+/* Селекторы идентификаторов начинаются с # */
+#singledout {
+    color: red;
+    text-decoration: underline;
+}
