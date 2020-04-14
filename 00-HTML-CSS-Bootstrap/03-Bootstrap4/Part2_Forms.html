@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы бутстрапа</title>
+    <!-- Подключаем Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Тег <fieldset> используется для объединения элементов формы -->
+        <form>
+            <!-- Поле ввода электронной почты -->
+            <div class="form-group">
+                <label for="exampleInputEmail1">Адрес электронной почты</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите адрес электронной почты">
+                <small id="emailHelp" class="form-text text-muted">Мы никому не передадим адрес вашей электронной почты</small>
+            </div>
+            <!-- Пароль -->
+            <div class="form-group">
+                <label for="exampleInputPassword1">Пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <!-- Выпадающий список -->
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Пример выбора</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <!-- Пример мутивыбора -->
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Пример мультивыбора</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <!-- Большое текстовое поле -->
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Пример большого тестового поля</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <!-- Загрузка файла -->
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Пример выбора файла</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <!-- Радио выбор -->
+            <fieldset class="form-group">
+                <div class="form-check">
+                    <legend>Радио выбор</legend>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Выбор по умолчанию
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Второй вариант выбора
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+                    <label class="form-check-label" for="exampleRadios3">
+                        Неактивный выбор
+                    </label>
+                </div>
+            </fieldset>
+            <!-- Выбор галочкой -->
+            <div class="form-check">
+
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                    Неактивная галочка
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Ввод</button>
+        </form>
+    </div>
+</body>
+</html>
