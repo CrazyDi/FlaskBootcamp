@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {% for pup in puppies %}
+        <li>{{pup}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if 'Rufus' in puppies %}
+    <p>Found your Rufus!</p>
+    {% else %}
+    <p>Hmm.. Rufus is not in this list!</p>
+    {% endif %}
+</body>
+</html>
