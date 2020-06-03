@@ -28,7 +28,7 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
+#  Usually these files are written by a python script from a templates
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
@@ -128,3 +128,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/05-Databases/00-DB-Basics/data.sqlite
+/05-Databases/01-DB-Relationships/data.sqlite
+/05-Databases/02-DB-Views/data.sqlite
