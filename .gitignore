@@ -131,3 +131,4 @@ dmypy.json
 /05-Databases/00-DB-Basics/data.sqlite
 /05-Databases/01-DB-Relationships/data.sqlite
 /05-Databases/02-DB-Views/data.sqlite
+/07-User-Authentification/01-Flask-Login/myproject/data.sqlite
